@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<meta charset="UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+		    <title>Website van Kamyar, Eline en Sam</title>
+				<link rel="stylesheet" href="style.css" type="text/css"  />
+		    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		</head>
+		<body>
+				<div id="loading"><span></span></div>
+
+				<div id="box">
+						<div id="titel">Website van Kamyar, Eline en Sam</div>
+						<div id="bclogo"></div>
+						<div id="arrowdown">
+								<p>Over ons</p>
+								<i class="arr-down"></i>
+						</div>
+				</div>
+				<div id="box2">
+						<div id="persoon">
+								<div id="persoonimg" class="kamyar"></div>
+								<div id="persoontekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non mattis nibh. Nullam nibh nunc, tristique in erat vel, mollis iaculis neque. Nunc cursus eros et pellentesque bibendum. Sed dignissim scelerisque laoreet. Praesent sit amet interdum justo, quis sodales tellus. Phasellus consequat vulputate mi, fringilla sodales ipsum volutpat id. Nunc interdum auctor hendrerit. Phasellus eget diam sit amet nisi ultrices consectetur. Proin commodo, odio a blandit convallis, ex nunc dictum urna, vel varius felis elit et est. Nulla in nulla elementum, gravida nulla id, ultrices lacus. Ut venenatis, lectus a aliquam finibus, justo justo sollicitudin mauris, vel interdum quam mi sit amet justo. Donec laoreet dapibus quam a faucibus. Duis rhoncus vel metus nec finibus. Etiam ut elit vitae mi rutrum feugiat. In venenatis dolor quis varius venenatis. Duis ut fringilla mauris.</div>
+								<div id="persoonsocialmedia">
+										<a target="_blank" href=""><div id="facebook"></div></a>
+										<a target="_blank" href=""><div id="twitter"></div></a>
+										<a target="_blank" href=""><div id="instagram"></div></a>
+								</div>
+						</div>
+						<div id="persoon">
+								<div id="persoonimg" class="eline"></div>
+								<div id="persoontekst">Hoi, ik ben Eline Kroes. Ik ben 16 jaar oud en zit in de 4e klas op het Havo op Bernardinuscollege in Heerlen. Ik maak samen met Kamyar Baroshi en Sam Offergeld een persoonlijke website voor het vak informatica.
+Ik ga jullie wat vertellen over mijn persoonlijke leven en wat ik in de toekomst zou willen doen. Op school heb ik voor het vakkenpakket N&G gekozen, dat betekent Natuur & Gezondheid. Het is een zeer moeilijk vakkenpakket waar je echt gemotiveerd voor moet zijn en hard voor moet leren. Ik heb dit vakkenpakket gekozen omdat ik later heel graag iets in de medische wereld zou willen doen, alleen moet ik er nog goed over nadenken wat ik precies wil gaan doen wat met de medische wereld te maken heeft.<br><br>Wat ik zoal graag doe in mijn vrije tijd is muziek luisteren, fitnessen, shoppen, naar de bioscoop gaan, lekker uit eten en een gezellige avond thuis met vriendinnen en vrienden. Ook ben ik best graag een avond even alleen en doe ik mijn eigen ding als ik thuis ben.</div>
+								<div id="persoonsocialmedia">
+										<a target="_blank" href=""><div id="facebook"></div></a>
+										<a target="_blank" href=""><div id="twitter"></div></a>
+										<a target="_blank" href=""><div id="instagram"></div></a>
+								</div>
+						</div>
+						<div id="persoon">
+								<div id="persoonimg" class="sam"></div>
+								<div id="persoontekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non mattis nibh. Nullam nibh nunc, tristique in erat vel, mollis iaculis neque. Nunc cursus eros et pellentesque bibendum. Sed dignissim scelerisque laoreet. Praesent sit amet interdum justo, quis sodales tellus. Phasellus consequat vulputate mi, fringilla sodales ipsum volutpat id. Nunc interdum auctor hendrerit. Phasellus eget diam sit amet nisi ultrices consectetur. Proin commodo, odio a blandit convallis, ex nunc dictum urna, vel varius felis elit et est. Nulla in nulla elementum, gravida nulla id, ultrices lacus. Ut venenatis, lectus a aliquam finibus, justo justo sollicitudin mauris, vel interdum quam mi sit amet justo. Donec laoreet dapibus quam a faucibus. Duis rhoncus vel metus nec finibus. Etiam ut elit vitae mi rutrum feugiat. In venenatis dolor quis varius venenatis. Duis ut fringilla mauris.</div>
+								<div id="persoonsocialmedia">
+										<a target="_blank" href=""><div id="facebook"></div></a>
+										<a target="_blank" href=""><div id="twitter"></div></a>
+										<a target="_blank" href=""><div id="instagram"></div></a>
+								</div>
+						</div>
+				</div>
+		</body>
+</html>
+
+<script>
+$(window).load(function() {
+    $("#loading").delay(1500).fadeOut(300);
+		$("#box,#box2").delay(1000).fadeIn(600);
+		$("#bclogo").delay(1000).fadeIn(600);
+});
+
+$(document).ready(function() {
+		$("#arrowdown").click(function() {
+				$('html, body').animate({
+						scrollTop: $("#box2").offset().top - 0
+				}, 750);
+		});
+});
+</script>
